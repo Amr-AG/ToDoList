@@ -27,7 +27,7 @@ submitClick.addEventListener("click", (e) => {
     //delete button Creat
     let DeleteTask = document.createElement("span");
     DeleteTask.className = "fas fa-minus-circle";
-    DeleteTask.style.cssText = "color:#cc6363; font-size:28px;margin:auto; margin-right:5px;";
+    DeleteTask.style.cssText = "cursor: pointer;color:#cc6363; font-size:28px;margin:auto; margin-right:5px;";
     //delete click
     DeleteTask.onclick = () => {
       tasks.style.display = "none";
@@ -37,7 +37,7 @@ submitClick.addEventListener("click", (e) => {
     //Done button Creat
     let DoneTask = document.createElement("i");
     DoneTask.className = "fas fa-check-circle";
-    DoneTask.style.cssText = "color:#4b8778; font-size:28px; margin:auto; margin-right:10px;";
+    DoneTask.style.cssText = "cursor: pointer;color:#4b8778; font-size:28px; margin:auto; margin-right:10px;";
 
     //Done click
     DoneTask.onclick = () => {
