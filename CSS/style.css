@@ -7,13 +7,14 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .fullPage {
-  width: 100%;
-  height: 100vh;
+  max-width: 100%;
+  min-height: 100vh;
   background-image: url("../Images/21786687.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #eee9e5;
+  position: relative;
 
 }
 .overlay {
@@ -23,23 +24,19 @@ body {
   height: 100%;
 }
 .container {
-  position: absolute;
-  margin: auto;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 800px;
+  width: 100%;
+  margin: auto 0 ;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 5px;
-  z-index: 100;
   padding-bottom: 1px;
-
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding-top:100px;
 }
 #add {
-  width: calc(105% - 30px);
-  margin: 0 auto;
+  width:800px;
+  margin: auto 0 ;
   font-size: 20px;
   padding: 25px 15px;
   background-color: #2e2e2e;
@@ -51,27 +48,40 @@ body {
 #add:focus {
   outline: none;
 }
-i {
+.plus {
   color: white;
   font-size: 30px;
-  position: absolute;
-  right: 20px;
-  top: 22px;
   cursor: pointer;
-  width: 30px;
-
+  padding:0;
+  margin-left: -40px;
+  width: 40px;
+  height:100%;
 
 }
-i:hover {
+.plus:hover {
   transition: 0.9s;
-  transform: rotate(90deg);
+  transform: rotate(80deg);
 }
 
 .spaceTasks {
   width: 100%;
-  height: 60px;
-  margin: auto;
+  margin: auto 0;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+}
+@media(max-width:768px) {
+  .container {
+    
+  }
+  #add{
+  width: 93%;
+  padding:15px;
+  font-size:15px;
+  
+}
+.plus {
+    font-size:26px;
+
+  }
 }
