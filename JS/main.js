@@ -34,8 +34,9 @@ submitClick.addEventListener("click", (e) => {
     //Done click
     DoneTask.onclick = () => {
       tasks.style.backgroundColor = "#4b8778";
+      tasks.style.borderTop = "none";
       tasks.style.transition = "2s";
-      DoneTask.style.color = "black";
+      DoneTask.style.color = "#555454";
       DoneTask.style.transition = "2s";
       document.getElementById("done").play();
     };
