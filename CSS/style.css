@@ -48,7 +48,8 @@ body {
   color: white;
   border-radius: 5px;
   border: none;
-  border-bottom: dashed 3px #4f4f4f;
+  border-right: solid 4px #4f4f4f;
+  border-left: solid 4px #4f4f4f;
   z-index: 1;
 }
 #add:focus {
