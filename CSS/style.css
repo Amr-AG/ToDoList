@@ -48,7 +48,7 @@ body {
   color: white;
   border-radius: 5px;
   border: none;
-  border-bottom: solid 5px #4f4f4f;
+  border-bottom: dotted 5px #4f4f4f;
   z-index: 1;
 }
 #add:focus {
